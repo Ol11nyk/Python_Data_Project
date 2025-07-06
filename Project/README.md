@@ -181,4 +181,4 @@ plt.show()
 
 #### Results 
 
-![The Highest Paid & Most In-Demand Skills for Data Analysts in Germany](images\4_highest_paid_skillsDA.png)
+![The Highest Paid & Most In-Demand Skills for Data Analysts in Germany](images/4_highest_paid_skillsDA.png)
