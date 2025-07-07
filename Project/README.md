@@ -122,7 +122,7 @@ plt.show()
 ```
 
 ### Results
-![Trending Top Skills for Data Analysts in Germany](images\3_trending_top_skills.png)
+![Trending Top Skills for Data Analysts in Germany](images/3_trending_top_skills.png)
 *Bar graph visualizing the trending top skills for data analysts in Germany in 2023.*
 
 ### Insights:
@@ -150,7 +150,7 @@ plt.show()
 
 #### Results 
 
-![Salary Distribution on Germany](images\4_salary_distribution.png)
+![Salary Distribution on Germany](images/4_salary_distribution.png)
 *Box plot visualizing the salary distributions for the top 7 data job titles.*
 
 ### Insights:
@@ -181,4 +181,95 @@ plt.show()
 
 #### Results 
 
-![The Highest Paid & Most In-Demand Skills for Data Analysts in Germany](images\4_highest_paid_skillsDA.png)
+![The Highest Paid & Most In-Demand Skills for Data Analysts in Germany](images/4_highest_paid_skillsDA.png)
+
+#### Insights:
+
+- The top graph shows specialized skills such as `Kafka`, `NoSQL`, etc. Also among those included some other technologies such as: `terraform`,  `github`, and `bigquery`, some reaching over $150K, suggesting that advanced technical proficiency can increase potential earnings.
+
+- The bottom graph highlights that foundational skills are the most in-demand: `Python`, `Excel`, `SQL`, etc. 
+
+- Surprisingly, among in-demand skills is `Spark`. Possibly due to an anomaly in the data and how we have handled it by removing from our DataFrame values with no yearly salary.
+
+- There is a clear distinction between the highest-paid skills and the most in-demand skills. Data analysts aiming to maximize their career potential are recommended to start with the most in-demand foundational skills, then learn more advanced technologies based on the current situation in the market.
+
+## 4. What are the most optimal skills to learn for Data Analysts?
+
+To identify the most optimal skills to learn ( the ones that are the highest paid and highest in demand) I calculated the percent of skill demand and the median salary of these skills. To easily identify which are the most optimal skills to learn. 
+
+View my notebook with detailed steps here: [5_Optimal_Skills](5_Optimal_Skills.ipynb).
+
+#### Visualize Data
+
+```python
+from adjustText import adjust_text
+import matplotlib.pyplot as plt
+
+plt.scatter(df_DA_skills_high_demand['skill_percent'], df_DA_skills_high_demand['median_salary'])
+plt.show()
+
+```
+
+#### Results
+
+![Most Optimal Skills for Data Analysts in Germany](images/5_optimal_skillspng.png)    
+*A scatter plot visualizing the most optimal skills (high paying & high demand) for data analysts in Germany.*
+
+#### Insights 
+
+- **Niche skills = premium pay**  
+  GitHub/GCP/Looker command top salaries ($180K-$200K) but appear in <10% of jobs
+- **Core tools dominate demand**  
+  SQL/Python/Excel/Tableau required in 30-50% of roles, with salaries at $80K-$120K
+- **Cloud skills boost earnings**  
+  AWS/Azure specialists earn $120K-$140K – 20-40% more than Tableau/Excel roles
+- **Power BI > Tableau premium**  
+  Power BI roles pay ~$130K vs Tableau's $100K at similar demand (25-35%)
+
+### Visualizing Different Techonologies
+
+Let's visualize the different technologies as well in the graph. We'll add color labels based on the technology (e.g., {Programming: Python})
+
+#### Visualize Data
+
+```python
+from matplotlib.ticker import PercentFormatter
+
+sns.scatterplot(
+    data=df_DA_skills_tech_high_demand,
+    x='skill_percent',
+    y='median_salary',
+    hue='technology'
+)
+
+plt.show()
+
+```
+
+#### Results
+
+![Most Optimal Skills for Data Analysts in Germany with Coloring by Technology](images/5_optimal_skillspng.png)  
+*A scatter plot visualizing the most optimal skills (high paying & high demand) for data analysts in Germany with color labels for technology.*
+
+# Insights
+
+This project provided several general insights into the data job market for analysts:
+
+- **Skill Demand and Salary Correlation**: There is a clear correlation between the demand for specific skills and the salaries these skills command. Advanced and specialized skills like Python and Oracle often lead to higher salaries.
+- **Market Trends**: There are changing trends in skill demand, highlighting the dynamic nature of the data job market. Keeping up with these trends is essential for career growth in data analytics.
+- **Economic Value of Skills**: Understanding which skills are both in-demand and well-compensated can guide data analysts in prioritizing learning to maximize their economic returns.
+
+
+# Challenges I Faced
+
+This project was not without its challenges, but it provided good learning opportunities:
+
+- **Data Inconsistencies**: Handling missing or inconsistent data entries requires careful consideration and thorough data-cleaning techniques to ensure the integrity of the analysis.
+- **Complex Data Visualization**: Designing effective visual representations of complex datasets was challenging but critical for conveying insights clearly and compellingly.
+- **Balancing Breadth and Depth**: Deciding how deeply to dive into each analysis while maintaining a broad overview of the data landscape required constant balancing to ensure comprehensive coverage without getting lost in details.
+- **Process of learning new technologies**: During the project, I have looked more deeply into Python, libraries, and environments where I have been working for a while. 
+
+
+# Conclusion
+
+This exploration into the data analyst job market has been incredibly informative, highlighting the critical skills and trends that shape this evolving field. The insights I got enhance my understanding and provide actionable guidance for anyone looking to advance their career in data analytics. As the market continues to change, ongoing analysis will be essential to stay ahead in data analytics. This project is a good foundation for future explorations and underscores the importance of continuous learning and adaptation in the data field.
