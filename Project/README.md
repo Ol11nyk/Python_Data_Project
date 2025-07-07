@@ -123,6 +123,7 @@ plt.show()
 
 ### Results
 ![Trending Top Skills for Data Analysts in Germany](images/3_trending_top_skills.png)
+![Trending Top Skills for Data Analysts in Germany](images/3_trending_top_skills.png)
 *Bar graph visualizing the trending top skills for data analysts in Germany in 2023.*
 
 ### Insights:
@@ -150,6 +151,7 @@ plt.show()
 
 #### Results 
 
+![Salary Distribution on Germany](images/4_salary_distribution.png)
 ![Salary Distribution on Germany](images/4_salary_distribution.png)
 *Box plot visualizing the salary distributions for the top 7 data job titles.*
 
@@ -180,6 +182,8 @@ plt.show()
 ```
 
 #### Results 
+
+![The Highest Paid & Most In-Demand Skills for Data Analysts in Germany](images/4_highest_paid_skillsDA.png)
 
 ![The Highest Paid & Most In-Demand Skills for Data Analysts in Germany](images/4_highest_paid_skillsDA.png)
 
