@@ -252,7 +252,7 @@ plt.show()
 
 #### Results
 
-![Most Optimal Skills for Data Analysts in Germany with Coloring by Technology](images/5_optimal_skillspng.png)  
+![Most Optimal Skills for Data Analysts in Germany with Coloring by Technology](images/5_color_optinal_skills.png)  
 *A scatter plot visualizing the most optimal skills (high paying & high demand) for data analysts in Germany with color labels for technology.*
 
 # Insights
