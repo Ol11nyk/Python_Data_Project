@@ -198,7 +198,7 @@ plt.show()
 
 To identify the most optimal skills to learn ( the ones that are the highest paid and highest in demand) I calculated the percent of skill demand and the median salary of these skills. To easily identify which are the most optimal skills to learn. 
 
-View my notebook with detailed steps here: [5_Optimal_Skills](5_Optimal_Skills.ipynb).
+View my notebook with detailed steps here: [5_Optimal_Skills](5_Optimal_Skill.ipynb).
 
 #### Visualize Data
 
