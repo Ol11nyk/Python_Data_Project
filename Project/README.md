@@ -61,9 +61,9 @@ df_DE = df[df['job_country'] == 'Germany']
 
 Each Jupyter notebook for this project aimed at investigating specific aspects of the data job market. Here’s how I approached each question:
 
-## 1. What are the most demanded skills for the top 3 most popular data roles?
+## 1. What are the most demanded skills for the top 4 most popular data roles?
 
-To find the most demanded skills for the top 3 most popular data roles. I filtered out those positions by which ones were the most popular, and got the top 5 skills for these top 3 roles. This query highlights the most popular job titles and their top skills, showing which skills I should pay attention to depending on the role I'm targeting. 
+To find the most demanded skills for the top 4 most popular data roles. I filtered out those positions by which ones were the most popular, and got the top 5 skills for these top 4 roles. This query highlights the most popular job titles and their top skills, showing which skills I should pay attention to depending on the role I'm targeting. 
 
 View my notebook with detailed steps here: [2_Skill_Demand](2_Skill_Demand.ipynb).
 
@@ -93,7 +93,7 @@ plt.show()
 
 ![Likelihood of Skills Requested in German Job Postings](images/2_Skill_demand.png)
 
-*Bar graph visualizing the salary for the top 3 data roles and their top 5 skills associated with each.*
+*Bar graph visualizing the salary for the top 4 data roles and their top 5 skills associated with each.*
 
 ### Insights:
 
@@ -123,7 +123,6 @@ plt.show()
 
 ### Results
 ![Trending Top Skills for Data Analysts in Germany](images/3_trending_top_skills.png)
-![Trending Top Skills for Data Analysts in Germany](images/3_trending_top_skills.png)
 *Bar graph visualizing the trending top skills for data analysts in Germany in 2023.*
 
 ### Insights:
@@ -152,7 +151,7 @@ plt.show()
 #### Results 
 
 ![Salary Distribution on Germany](images/4_salary_distribution.png)
-![Salary Distribution on Germany](images/4_salary_distribution.png)
+
 *Box plot visualizing the salary distributions for the top 7 data job titles.*
 
 ### Insights:
@@ -182,8 +181,6 @@ plt.show()
 ```
 
 #### Results 
-
-![The Highest Paid & Most In-Demand Skills for Data Analysts in Germany](images/4_highest_paid_skillsDA.png)
 
 ![The Highest Paid & Most In-Demand Skills for Data Analysts in Germany](images/4_highest_paid_skillsDA.png)
 
